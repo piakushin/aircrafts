@@ -7,6 +7,7 @@ gem 'rails', '4.2.5.1'
 # Use sqlite3 as the database for Active Record
 group :development do
     gem 'sqlite3'
+    gem 'rspec-rails'
 end
 
 # Use SCSS for stylesheets
@@ -41,9 +42,11 @@ group :production do
     gem 'rails_12factor'
 end
 
-group :development, :test do
+group :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'selenium-webdriver', '2.35.1'
+  gem 'capybara', '2.1.0'
 end
 
 group :development do

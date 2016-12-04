@@ -1,11 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe "StaticPages", type: :request do
-  let(:base_title) { $base_title = 'Twitter clone: ZWITTER |' }
+  let(:base_title) { $base_title = 'Aircrafts catalog |' }
   describe "Home page" do
-    it "should have the content 'ZWITTER#Home'" do
+    it "should have the content 'AIRCRAFTS#Home'" do
       visit 'static_pages/home'
-      expect(page).to have_content('ZWITTER#Home')
+      expect(page).to have_content('AIRCRAFTS#Home')
     end
 
     it "should have the right title" do
@@ -15,9 +15,9 @@ RSpec.describe "StaticPages", type: :request do
   end
 
   describe "Help page" do
-    it "should have the content 'ZWITTER#Help'" do
+    it "should have the content 'AIRCRAFTS#Help'" do
       visit 'static_pages/help'
-      expect(page).to have_content('ZWITTER#Help')
+      expect(page).to have_content('AIRCRAFTS#Help')
     end
 
     it "should have the right title" do
@@ -27,9 +27,9 @@ RSpec.describe "StaticPages", type: :request do
   end
 
   describe "About page" do
-    it "should have the content 'ZWITTER#About Us'" do
+    it "should have the content 'AIRCRAFTS#About Us'" do
       visit '/static_pages/about'
-      expect(page).to have_content('ZWITTER#About Us')
+      expect(page).to have_content('AIRCRAFTS#About Us')
     end
 
     it "should have the right title" do
@@ -39,9 +39,9 @@ RSpec.describe "StaticPages", type: :request do
   end
 
   describe "Contact page" do
-    it "should have the content 'ZWITTER#Contact'" do
+    it "should have the content 'AIRCRAFTS#Contact'" do
       visit 'static_pages/contact'
-      expect(page).to have_content('ZWITTER#Contact')
+      expect(page).to have_content('AIRCRAFTS#Contact')
     end
 
     it "should have the right title" do

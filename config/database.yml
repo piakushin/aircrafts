@@ -9,3 +9,6 @@ development: &development
 
 production:
   <<: *development
+
+test:
+  <<: *development

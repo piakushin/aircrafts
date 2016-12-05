@@ -13,4 +13,4 @@ def secure_token
   end
 end
 
-Zwitter::Application.config.secret_key_base = secure_token
+Catalog::Application.config.secret_key_base = secure_token

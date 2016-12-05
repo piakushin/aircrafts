@@ -17,5 +17,3 @@
 /tmp
 
 .secret
-
-config/database.yml

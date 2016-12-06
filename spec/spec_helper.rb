@@ -1,2 +1,3 @@
 require 'rubygems'
-require 'support/utilities.rb'
+#require 'support/utilities.rb'
+include ApplicationHelper

@@ -1,6 +1,8 @@
 require 'rails_helper'
 require 'spec_helper'
 
+include ApplicationHelper
+
 RSpec.describe "StaticPages", type: :request do
   #let(:base_title) { $base_title = 'Aircrafts catalog' }
   subject { page }
